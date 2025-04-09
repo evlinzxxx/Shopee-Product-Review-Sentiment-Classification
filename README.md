@@ -44,3 +44,8 @@ Melibatkan beberapa tahapan penting, yaitu:
 
 ### 8. Uji Prediksi
 - Semua model berhasil memprediksi dengan tepat untuk ulasan baru yang bersifat positif, netral, dan negatif.
+
+
+
+
+#### Proyek 1 Kursus Belajar Pengembangan Machine Learning
