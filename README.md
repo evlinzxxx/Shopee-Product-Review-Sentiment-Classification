@@ -1,9 +1,7 @@
 ## Proyek Analisis Sentimen Ulasan Produk di Shopee  
-**Nama:** Evlin Sitanggang  
 
-### 1. **Persiapan Library & Dataset**
-- Mengimpor berbagai library penting seperti `pandas`, `re`, `Sastrawi`, `nltk`, `scikit-learn`, dan `TensorFlow`.
-- Membaca dataset `review_shopee.csv` yang berisi ulasan produk dari aplikasi Shopee.
+### 1. **Pengambilan Data (Scraping)**
+- Mengambil 30.000 ulasan aplikasi Shopee dari Google Play Store menggunakan library `google_play_scraper`.
 
 ### 2. **Pembersihan Data (Data Cleaning)**
 - Menghapus nilai kosong (missing value) pada kolom review.
@@ -27,12 +25,22 @@ Melibatkan beberapa tahapan penting, yaitu:
 - Menggunakan teknik **TF-IDF Vectorizer** untuk mengubah teks menjadi fitur numerik.
 - Data dibagi menjadi data latih dan data uji (train-test split).
 
-### 6. **Pembangunan Model**
-- Model yang digunakan: **Naive Bayes** (BernoulliNB).
-- Melatih model dengan data yang telah diproses.
-- Menghitung akurasi dan precision sebagai metrik evaluasi model.
+### 6. **Pelatihan & Evaluasi Model**
+- Membandingkan tiga model deep learning: **CNN**, **LSTM**, dan **GRU**
+
+### Hasil Akhir Model
+
+| Model | Akurasi Training | Akurasi Testing |
+|-------|------------------|-----------------|
+| CNN   | 94%              | 92%             |
+| LSTM  | 94%              | 92%             |
+| GRU   | 94%              | 92%             |
 
 ### 7. **Visualisasi & Analisis Hasil**
 - Menampilkan WordCloud dari kata-kata yang sering muncul di ulasan.
 - Membandingkan jumlah masing-masing kategori sentimen dengan diagram batang atau pie chart.
 - Menganalisis kata-kata yang sering muncul di masing-masing kategori sentimen.
+
+
+### 8. Uji Prediksi
+- Semua model berhasil memprediksi dengan tepat untuk ulasan baru yang bersifat positif, netral, dan negatif.
