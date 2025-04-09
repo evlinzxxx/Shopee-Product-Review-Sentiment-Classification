@@ -48,4 +48,4 @@ Melibatkan beberapa tahapan penting, yaitu:
 
 
 
-#### Proyek 1 Kursus Belajar Pengembangan Machine Learning
+#### Proyek 1 Belajar Pengembangan Machine Learning
